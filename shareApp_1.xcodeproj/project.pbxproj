@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1248EDD71108354BDABA5CED /* Pods_shareApp_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7185E98E5A8CAEE5EEEDA482 /* Pods_shareApp_1.framework */; };
+		F73ECB462953198300C55981 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F73ECB452953198300C55981 /* GoogleService-Info.plist */; };
+		F7A30DA5296EBA4C0066D82B /* sharelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A30DA4296EBA4C0066D82B /* sharelist.swift */; };
 		F7C8BE572940936B00FCED4C /* shareApp_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C8BE562940936B00FCED4C /* shareApp_1App.swift */; };
 		F7C8BE592940936B00FCED4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C8BE582940936B00FCED4C /* ContentView.swift */; };
 		F7C8BE5B2940936C00FCED4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C8BE5A2940936C00FCED4C /* Assets.xcassets */; };
@@ -17,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FDAE8BA8816443DEBBD8705 /* Pods-shareApp_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareApp_1.release.xcconfig"; path = "Target Support Files/Pods-shareApp_1/Pods-shareApp_1.release.xcconfig"; sourceTree = "<group>"; };
+		7185E98E5A8CAEE5EEEDA482 /* Pods_shareApp_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shareApp_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E8ADF0754C31515388C437 /* Pods-shareApp_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shareApp_1.debug.xcconfig"; path = "Target Support Files/Pods-shareApp_1/Pods-shareApp_1.debug.xcconfig"; sourceTree = "<group>"; };
+		F73ECB452953198300C55981 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F7A30DA4296EBA4C0066D82B /* sharelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharelist.swift; sourceTree = "<group>"; };
 		F7C8BE532940936B00FCED4C /* shareApp_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shareApp_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C8BE562940936B00FCED4C /* shareApp_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shareApp_1App.swift; sourceTree = "<group>"; };
 		F7C8BE582940936B00FCED4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1248EDD71108354BDABA5CED /* Pods_shareApp_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240A3F4FAF960117087E0476 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7185E98E5A8CAEE5EEEDA482 /* Pods_shareApp_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D120BC96E401BDE1C4CD1678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5E8ADF0754C31515388C437 /* Pods-shareApp_1.debug.xcconfig */,
+				2FDAE8BA8816443DEBBD8705 /* Pods-shareApp_1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F7C8BE4A2940936B00FCED4C = {
 			isa = PBXGroup;
 			children = (
 				F7C8BE552940936B00FCED4C /* shareApp_1 */,
 				F7C8BE542940936B00FCED4C /* Products */,
+				D120BC96E401BDE1C4CD1678 /* Pods */,
+				240A3F4FAF960117087E0476 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +87,12 @@
 			children = (
 				F7C8BE562940936B00FCED4C /* shareApp_1App.swift */,
 				F7C8BE582940936B00FCED4C /* ContentView.swift */,
+				F7A30DA4296EBA4C0066D82B /* sharelist.swift */,
 				F7C8BE642940ADA000FCED4C /* DateView.swift */,
 				F7FC43912949CAAD00F4BBE2 /* SecondView.swift */,
 				F7C8BE662940B09100FCED4C /* BatteryViewModal.swift */,
 				F7C8BE5A2940936C00FCED4C /* Assets.xcassets */,
+				F73ECB452953198300C55981 /* GoogleService-Info.plist */,
 				F7C8BE5C2940936C00FCED4C /* Preview Content */,
 			);
 			path = shareApp_1;
@@ -83,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7C8BE612940936C00FCED4C /* Build configuration list for PBXNativeTarget "shareApp_1" */;
 			buildPhases = (
+				792A93354F6E2800517EAE36 /* [CP] Check Pods Manifest.lock */,
 				F7C8BE4F2940936B00FCED4C /* Sources */,
 				F7C8BE502940936B00FCED4C /* Frameworks */,
 				F7C8BE512940936B00FCED4C /* Resources */,
+				91856480C2702C4D78CECD62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,10 +168,53 @@
 			files = (
 				F7C8BE5E2940936C00FCED4C /* Preview Assets.xcassets in Resources */,
 				F7C8BE5B2940936C00FCED4C /* Assets.xcassets in Resources */,
+				F73ECB462953198300C55981 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		792A93354F6E2800517EAE36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shareApp_1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91856480C2702C4D78CECD62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shareApp_1/Pods-shareApp_1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shareApp_1/Pods-shareApp_1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shareApp_1/Pods-shareApp_1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F7C8BE4F2940936B00FCED4C /* Sources */ = {
@@ -149,6 +224,7 @@
 				F7C8BE672940B09100FCED4C /* BatteryViewModal.swift in Sources */,
 				F7FC43922949CAAD00F4BBE2 /* SecondView.swift in Sources */,
 				F7C8BE652940ADA000FCED4C /* DateView.swift in Sources */,
+				F7A30DA5296EBA4C0066D82B /* sharelist.swift in Sources */,
 				F7C8BE592940936B00FCED4C /* ContentView.swift in Sources */,
 				F7C8BE572940936B00FCED4C /* shareApp_1App.swift in Sources */,
 			);
@@ -275,6 +351,7 @@
 		};
 		F7C8BE622940936C00FCED4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E8ADF0754C31515388C437 /* Pods-shareApp_1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +383,7 @@
 		};
 		F7C8BE632940936C00FCED4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FDAE8BA8816443DEBBD8705 /* Pods-shareApp_1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

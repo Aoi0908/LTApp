@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct SecondView: View {
     @State private var showingSecondScreen = false

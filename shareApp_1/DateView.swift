@@ -11,6 +11,9 @@
 //位置情報を取得する
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
+
 
 struct DateView: View {
     
